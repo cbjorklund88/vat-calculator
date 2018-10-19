@@ -6,9 +6,56 @@ body {
   font-family: sans-serif;
   font-family: 'Comfortaa', cursive;
   font-size: 20px;
+  background-color: #89BD9E;
+}
+
+h1 {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  color: #3C153B;
+}
+@keyframes example {
+    from {color: #3C153B;}
+    to {color: #F0C987;}
 }
 
 input {
-  font-size: 20px;
-  margin-left: 20px;
+  font-size: 25px;
+  border: 1px solid #3C153B;
+  outline: none;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+
+.percentege-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.percentege-container label {
+  padding: 0 10px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #3C153B;
+  padding: 20px;
+}
+
+.inc-vat-container, .ex-vat-container, .sum-vat-container   {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
